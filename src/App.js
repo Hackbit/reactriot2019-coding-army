@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import FemaleCartoon from './components/FemaleCartoon';
+import MaleCartoon from './components/MaleCartoon';
 
 function App() {
   return (
