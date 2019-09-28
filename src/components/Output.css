@@ -1,6 +1,10 @@
 .output{
   background-image: url('../images/beach.jpg');
-  width: 100%;
+  width: 100%;  
+  background-repeat: no-repeat;
   display: flex;
   flex-wrap: wrap;
+  background-position: center;
+  background-size: cover;
+  justify-content: space-around;
 }
