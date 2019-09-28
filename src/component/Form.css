@@ -17,16 +17,13 @@ h1{
 .main{
     border: 1px solid black;
     border-radius: 10px;
-    margin: 100px 500px;
     padding: 15px;
-    margin-bottom: 0px;
+    width: fit-content;
 }
 
 .colorChoose{
     display: flex;
     flex-direction: row;
-    margin-left: 150px;
-    margin-top: 20px;
 
 }
 
@@ -45,9 +42,7 @@ select{
     font-weight: bold;
     
 }
-/* .gender{
 
- } */
 .submit{
     padding: 15px;
     border: 1px solid black;
@@ -58,12 +53,7 @@ select{
 
 }
 
-.backgroundImage{
-background-repeat: no-repeat;
-background-size: cover;
-margin-top: 0px;
-height: 100%;
-}
+
 
 .submit:hover{
     cursor: pointer;
