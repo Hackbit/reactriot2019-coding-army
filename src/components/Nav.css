@@ -1,6 +1,6 @@
 header{
-    display: flex;
-    background-color: rgb(36, 122, 28);
+  display: flex;
+  background-color: rgb(36, 122, 28);
 }
 .link{
     text-decoration: none;
@@ -13,9 +13,10 @@ header{
     margin: 10px;
 }
 .link:hover{
-    color: rgb(255, 251, 0);
+  color: rgb(255, 251, 0);
 }
 .list-container{
+
     list-style-type: none;
     padding: 20px;
 }
@@ -23,4 +24,3 @@ header{
     width: 100%;
     overflow: auto;
 }
-
