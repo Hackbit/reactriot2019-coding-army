@@ -25,6 +25,10 @@ header{
     overflow: auto;
 }
 
+.LetsPlay{
+    display: block;
+}
+
 .main-heading{
     color: #b50f02;
     font-size: -webkit-xxx-large;
