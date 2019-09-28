@@ -1,4 +1,6 @@
 import React from 'react';
+
+import Form from './component/Form'
 import './App.css';
 
 import FemaleCartoon from './components/FemaleCartoon';
@@ -13,10 +15,12 @@ function App() {
   return (
   
     <div className="App">
+
     
       <Nav/>
-      
-      
+      <Nav/>
+    <Form />
+
     </div>
   );
 }
