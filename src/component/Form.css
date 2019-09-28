@@ -1,0 +1,75 @@
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    font-family: 'Chilanka',cursive;
+    font-size: 1em;
+}
+label{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+h1{
+    text-align: center;
+}
+
+.main{
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 100px 500px;
+    padding: 15px;
+    margin-bottom: 0px;
+}
+
+.colorChoose{
+    display: flex;
+    flex-direction: row;
+    margin-left: 150px;
+    margin-top: 20px;
+
+}
+
+input{
+    margin-top: 20px;
+}
+.nametwo{
+    background-color: beige;
+}
+
+label{
+    margin: 20px;
+}
+select{
+    margin: 20px;
+    font-weight: bold;
+    
+}
+/* .gender{
+
+ } */
+.submit{
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: #3f51b5;
+    color: black;
+
+}
+
+.backgroundImage{
+background-repeat: no-repeat;
+background-size: cover;
+margin-top: 0px;
+height: 100%;
+}
+
+.submit:hover{
+    cursor: pointer;
+    color:#3f51b5;
+    background-color: black;
+
+}
+
+
