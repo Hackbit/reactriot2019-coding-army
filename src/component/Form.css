@@ -17,17 +17,12 @@ h1{
 .main{
     border: 1px solid black;
     border-radius: 10px;
-    margin: 100px 500px;
     padding: 15px;
-    margin-bottom: 0px;
 }
 
 .colorChoose{
     display: flex;
     flex-direction: row;
-    margin-left: 150px;
-    margin-top: 20px;
-
 }
 
 input{
@@ -45,9 +40,6 @@ select{
     font-weight: bold;
     
 }
-/* .gender{
-
- } */
 .submit{
     padding: 15px;
     border: 1px solid black;

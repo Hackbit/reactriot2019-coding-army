@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Form.css';
-import { CirclePicker } from 'react-color';
 
 class Form extends Component {
     render() {
@@ -11,21 +10,21 @@ class Form extends Component {
                         <h1>CARTOONIFY GAME FORM</h1>
                     </div>
                     <div className="main">
-                        <label className="name">Name </label>
+                        <label className="name">Full Name</label>
                         <br />
-                        <input type="text" className="nametwo"></input>
+                        <input type="text" className="nametwo" placeholder="Your good name here.."></input>
                         <br />
-                        <label className="gender">Gender </label>
+                        <br />
+                        <label className="gender">Choose your Gender</label>
                         <br />
                         <input type="radio" name="gender" value="male" /> Male
-                        <br />
                         <input type="radio" name="gender" value="female" /> Female
                         <br />
-                        <label className="color">Favorite Color :</label>
-                        <CirclePicker className="colorChoose" />
+                        <label className="color">Select your favorite Color</label>
+                        <input type="color"></input>
                         <br />
-                        <label className="place">Favorite Place</label>
                         <br />
+                        <label className="place">Which is your favorite Place</label>
                         <select>
                             <option value="mountain">Mountain</option>
                             <option value="beach">Beach</option>
@@ -33,6 +32,7 @@ class Form extends Component {
                             <option value="valley">Valley</option>
                             <option value="forest">Forest</option>
                         </select>
+                        <br />
                         <input className="submit" type="submit"></input>
                     </div>
                 </form>
