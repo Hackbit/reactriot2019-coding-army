@@ -1,7 +1,12 @@
 import React from 'react';
 import './App.css';
+
+import FemaleCartoon from './components/FemaleCartoon';
+import MaleCartoon from './components/MaleCartoon';
+
 import Nav from './components/Nav';
 import './components/Nav.css';
+
 
 
 function App() {
