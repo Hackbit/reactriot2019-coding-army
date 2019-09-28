@@ -1,0 +1,6 @@
+.output{
+  background-image: url('../images/beach.jpg');
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}

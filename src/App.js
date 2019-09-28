@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import FemaleCartoon from './components/FemaleCartoon';
 import MaleCartoon from './components/MaleCartoon';
+import Output from './components/Output';
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <FemaleCartoon />
+        <Output />
         <a
           className="App-link"
           href="https://reactjs.org"
