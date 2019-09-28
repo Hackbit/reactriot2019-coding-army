@@ -1,6 +1,6 @@
-header{
-  display: flex;
-  background-color: rgb(36, 122, 28);
+header{ 
+    display: flex;
+    background-color: rgb(249, 188, 7);
 }
 .link{
     text-decoration: none;
@@ -24,3 +24,39 @@ header{
     width: 100%;
     overflow: auto;
 }
+
+.main-heading{
+    color: #b50f02;
+    font-size: -webkit-xxx-large;
+    margin-top: 50px;
+    font-family: 'Anton', sans-serif;
+    text-decoration: underline;
+}
+.sub-heading{
+    color: black;
+    font-size: larger;
+}
+.play-game{
+    border: none;
+    padding: 22px 51px;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.4s ease;
+    color: #d01708;
+    font-size: xx-large;
+    background-color: #0d2b28;
+    outline: none;
+    margin: 20px;
+
+}
+.play-game:hover{
+    color: darkcyan;
+    font-weight: 700;
+    letter-spacing: 4px;
+    background: none;
+    transition: all 0.4s ease; 
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+}
+
+
