@@ -7,14 +7,7 @@ export default class Nav extends Component {
             <>
             <header>
                 <nav className="homepg-nav">
-
-
-  render() {
-    return (
-      <header>
-        <nav className="homepg-nav">
-
-                    <ul className="list-container">
+                  <ul className="list-container">
                         <a className="link" href="google.com"><i class="fas fa-home"></i> Home</a>
                         <a className="link" href="google.com"><i class="far fa-check-circle"></i> Vote for us</a>
                         <a className="link" href="google.com"><i class="far fa-thumbs-up"></i> Like our repo</a>
@@ -29,4 +22,5 @@ export default class Nav extends Component {
 
         )
     }
+
 }
