@@ -1,14 +1,28 @@
-import React from 'react';
+import React ,{Component}from 'react';
 import './Form.css';
 import { CirclePicker } from 'react-color';
+import mountain from './image/mount.jpg';
+
 
 function handleChange(color, event) {
     console.log(color);
 }
-function Form() {
+class Form extends Component {
+    constructor(props){
+        super(props);
+        this.state={
+            activeBackground : "mountain"
+        }  
+    }
+    render(){
+        console.log(this.state.activeBackground);
+        const divStyle = {
+            color: 'black',
+            backgroundImage: `url(${mountain})`  
 
+          };
     return (
-        // <div className="backgroundImage">
+         <div className="backgroundImage" style={divStyle}>
             <form>
 
                 <div className="headind">
@@ -51,11 +65,12 @@ function Form() {
                             <input className="submit" type="submit"></input>
 </div>
             </form>
-                // {/* </div> */}
+                </div>
                  );
             
         }
-        
+    }
+
         
         
 export default Form;
