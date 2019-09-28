@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 export default class Nav extends Component {
     render() {
         return (
+            <>
             <header>
                 <nav className="homepg-nav">
 
@@ -14,6 +15,11 @@ export default class Nav extends Component {
                     </ul>
                 </nav>
             </header>
+            <h1 className="main-heading"> Welcome To Cartoonify Game </h1>
+            <h3 className="sub-heading">Let's play! Submit your answer to the following questions</h3>
+            <button className="play-game">PLAY</button>
+            </>
+
         )
     }
 }
