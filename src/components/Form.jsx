@@ -7,18 +7,23 @@ import './Form.css';
 
 
 var userName = "";
+var place = "";
+var gender = "";
+
+
 class PlacesOptions extends React.Component {
     constructor(props) {
         super(props);
         this.state = { value: 'Mountain' };
-
-        this.handleSubmit = this.handleSubmit.bind(this);
     }
-    handleSubmit(event) {
+
+    handleSubmit = (event) => {
         this.setState({
             value: event.target.value
+        }, () => {
+            console.log(this.state.value);
+            place = this.state.value;
         })
-        console.log(this.state.value);
     }
 
     render() {
@@ -26,7 +31,7 @@ class PlacesOptions extends React.Component {
             <div >
                 <label className="place">
                     Which is your favorite Place
-            <select value={this.state.value} onChange={this.handleSubmit}>
+                      <select value={this.state.value} onChange={this.handleSubmit}>
                         <option value="Mountain">Mountain</option>
                         <option value="Beach">Beach</option>
                         <option value="Desert">Desert</option>
@@ -34,7 +39,6 @@ class PlacesOptions extends React.Component {
                         <option value="Forest">Forest</option>
                     </select>
                 </label>
-                {/* <input type="submit" value="Submit" onClick={this.handleSubmit} /> */}
             </div>
         );
     }
@@ -43,7 +47,7 @@ class GenderOptions extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            selectedOption: "Male"
+            selectedOption: ""
         };
     }
     updateGender = (event) => {
@@ -51,10 +55,7 @@ class GenderOptions extends Component {
         this.setState({
             selectedOption: event.target.value
         });
-        setTimeout(() => {
-            console.log("You have submitted:", this.state.selectedOption);
-
-        }, 1000)
+        gender = event.target.value
     };
     render() {
         return (
@@ -83,22 +84,20 @@ class NameForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = { value: '' };
-        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
-    handleSubmit(event) {
-        event.preventDefault();
-
-        this.setState({ value: event.target.value });
-        console.log(this.state.value);
-        userName = this.state.value;
+    handleSubmit = (event) => {
+        this.setState({ value: event.target.value }, () => {
+            console.log(this.state.value);
+            userName = this.state.value;
+        });
     }
 
     render() {
         return (
             <label>
                 Name:
-            <input type="text" value={this.state.value + " "} onChange={this.handleSubmit} placeholder="Your good name here.." />
+            <input type="text" value={this.state.value} onChange={this.handleSubmit} placeholder="Your good name here.." />
             </label>
         );
     }
@@ -112,10 +111,6 @@ ReactDOM.render(
 class Form extends Component {
     state = {
         shown: true,
-        name: '',
-        gender: '',
-        color: '',
-        place: '',
     }
     handleChange(event) {
         this.setState({ value: event.target.value });
@@ -150,6 +145,7 @@ class Form extends Component {
                                 </div>
                                 <div>
                                     <label className="color">Select your favorite Color</label>
+
                                     <input type="color"
                                         value={this.state.value}
                                         onChange={this.updateColor}
@@ -160,7 +156,7 @@ class Form extends Component {
                             </div>
                         </form >
                     ) : (
-                            <Output userName={userName} style={{}} />
+                            <Output userName={userName} place={place} gender={gender} style={{}} />
                         )
                 }
             </div>
