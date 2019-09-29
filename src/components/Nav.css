@@ -14,6 +14,7 @@ header{
     float: left;
     margin: 15px;
 }
+
 .link:hover{
   color: red;
 }
@@ -41,7 +42,6 @@ i:hover{
     color: #ffd437;
     font-size: -webkit-xxx-large;
     margin-top: 50px;
-    font-family: 'Anton', sans-serif;
     text-decoration: underline;
     font-family: 'Chilanka',cursive;
     text-shadow: 2px 2px #0e0c0c;
@@ -83,6 +83,35 @@ i:hover{
     height: 80px;
     background-color: white;
     border-radius: 50%;
+}
+@media screen and (max-width:768px){
+    .link{
+        margin:5px;
+        font-size: 15px;
+    }
+    .logo{
+        margin:15px;
+    }
+    
+}
+@media screen and (max-width:375px){
+    
+    .link{
+        display: flex;
+        flex-direction: column;
+        margin:3px;
+        font-size: 12px;
+    }
+    .logo{
+        margin:15px;
+    }
+    .main-heading{
+        font-size:30px;
+    }
+    .play-game{
+        padding: 10px 25px;
+    
+    }
 }
 
 

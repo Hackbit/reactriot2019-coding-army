@@ -75,9 +75,6 @@ input, label, select {
     box-shadow: 0px 5px 40px 1px rgba(0, 0, 0, 0.57);
     cursor: pointer;
 }
-
-
-
 .backgroundImage{
 background-repeat: no-repeat;
 background-size: cover;
@@ -85,6 +82,20 @@ margin-top: 0px;
 height: 100%;
 }
 
+@media screen and (max-width:375){
+    label{
+        font-size: 15px;
+    
+    }
+    .submit {
+        padding: 15px;
+    }
+    
+}
+
+
+
+    
 
 
 
