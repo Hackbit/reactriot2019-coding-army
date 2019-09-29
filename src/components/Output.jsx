@@ -4,10 +4,10 @@ import FemaleCartoon from './FemaleCartoon';
 import Bubble from './Bubble';
 import './Output.css';
 
-export default function Output() {
+export default function Output(props) {
   return (
     <div className="output">
-      <Bubble />
+      <Bubble name={this.props.name} />
       <MaleCartoon />
       <FemaleCartoon />
     </div>

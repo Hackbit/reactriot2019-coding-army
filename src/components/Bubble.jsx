@@ -2,13 +2,12 @@ import './Bubble.css'
 
 import React from 'react'
 
-const name = "ABC";
 const place = "XYZ";
 
-export default function Bubble() {
+export default function Bubble(props) {
   return (
     <div className="speech-bubble">
-      <h1>Hi! I'm {name}. I'm enjoying my summer at my Favorite place {place}. </h1>
+      <h1>Hi! I'm {this.props.name}. I'm enjoying my summer at my Favorite place {place}. </h1>
     </div>
   )
 }
