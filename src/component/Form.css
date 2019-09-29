@@ -1,25 +1,28 @@
-body{
+body {
     display: flex;
     flex-direction: column;
     background-color: beige;
-    font-family: 'Chilanka',cursive;
+    font-family: 'Chilanka', cursive;
     font-size: 1em;
 }
-label{
+
+label {
     font-weight: bold;
     font-size: 1.5em;
 }
 
-h1{
+h1 {
     text-align: center;
 }
+
 form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.main{
+
+.main {
     border: none;
     border-radius: 10px;
     padding: 35px;
@@ -27,17 +30,15 @@ form {
     flex-direction: column;
     background-image: repeating-linear-gradient(45deg, #e91e638f, #ffeb3b94 100px);
     box-shadow: 0px 0px 7px 9px #e91e638f, inset 0px 0px 8px 8px #e91e638f;
-    
-  }
+}
 
-.nametwo, select{
+.nametwo, select {
     background-color: #fdbe11;
     color: black;
     font-weight: bold;
-    font-family: 'Chilanka',cursive;
+    font-family: 'Chilanka', cursive;
     border: none;
-} 
-
+}
 
 input, label, select {
     padding: 10px;
@@ -45,31 +46,31 @@ input, label, select {
     border: none;
     margin-bottom: 5px;
 }
+
 .main div {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.submit{
+.submit {
     border: none;
     padding: 20px;
     border-radius: 10px 0 10px 0;
     transition: all 0.4s ease;
-    font-family: 'Chilanka',cursive;
-    font-size:1.5em;
-   
+    font-family: 'Chilanka', cursive;
+    font-size: 1.5em;
     color: black;
-    background-image: linear-gradient(to left, red , yellow);
+    background-image: linear-gradient(to left, red, yellow);
     font-weight: bold;
 }
-.submit:hover{
-    color:  #fdbe0f;
+
+.submit:hover {
+    color: #fdbe0f;
     font-weight: 700;
     letter-spacing: 4px;
-    
     transition: all 0.4s ease;
     text-shadow: 2px 2px 6px #0e0c0c;
-    box-shadow: 0px 5px 40px 1px rgba(0,0,0,0.57);
+    box-shadow: 0px 5px 40px 1px rgba(0, 0, 0, 0.57);
     cursor: pointer;
 }
