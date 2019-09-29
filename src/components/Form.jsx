@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import Output from './Output';
 import ReactDOM from 'react-dom';
 import './Form.css';
+
+
+
 var userName = "";
 class PlacesOptions extends React.Component {
     constructor(props) {
@@ -15,7 +18,6 @@ class PlacesOptions extends React.Component {
             value: event.target.value
         })
         console.log(this.state.value);
-        event.preventDefault();
     }
 
     render() {
@@ -84,10 +86,11 @@ class NameForm extends React.Component {
     }
 
     handleSubmit(event) {
-        this.setState({ value: event.target.value });
-
-        console.log(this.state.value);
         event.preventDefault();
+
+        this.setState({ value: event.target.value });
+        console.log(this.state.value);
+        userName = this.state.value;
     }
 
     render() {
@@ -119,14 +122,14 @@ class Form extends Component {
     toggleShown = (e) => {
         this.setState({ shown: !this.state.shown });
     }
-    updateName = (e) => {
-        this.setState({
-            name: e.target.value,
-        });
-        console.log(this.state.name);
-        userName = this.state.name;
+    // updateName = (e) => {
+    //     this.setState({
+    //         name: e.target.value,
+    //     });
+    //     console.log(this.state.name);
+    //     userName = this.state.name;
 
-    }
+    // }
     updateColor = (e) => {
         this.setState({
             color: e.target.value,
@@ -161,7 +164,7 @@ class Form extends Component {
                             </div>
                         </form >
                     ) : (
-                            <Output userName={userName} />
+                            <Output userName={userName} style={{}} />
                         )
                 }
             </div>
