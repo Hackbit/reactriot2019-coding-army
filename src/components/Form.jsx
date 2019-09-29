@@ -44,11 +44,14 @@ class GenderOptions extends Component {
         };
     }
     updateGender = (event) => {
+        console.log(event.target.value)
         this.setState({
             selectedOption: event.target.value
         });
-        console.log("You have submitted:", this.state.selectedOption);
-        event.preventDefault();
+        setTimeout(() => {
+            console.log("You have submitted:", this.state.selectedOption);
+
+        }, 1000)
     };
     render() {
         return (
@@ -72,7 +75,6 @@ class GenderOptions extends Component {
         );
     }
 }
-// export default GenderOptions;
 
 class NameForm extends React.Component {
     constructor(props) {
@@ -127,7 +129,7 @@ class Form extends Component {
     }
     updateColor = (e) => {
         this.setState({
-            color: this.target.value,
+            color: e.target.value,
         });
         console.log(this.state.color);
 
