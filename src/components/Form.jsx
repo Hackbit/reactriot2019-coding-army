@@ -14,7 +14,7 @@ var color = "";
 class PlacesOptions extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { value: 'Mountain' };
+        this.state = { value: '' };
     }
 
     handleSubmit = (event) => {

@@ -35,3 +35,22 @@
 
 
 }
+a{
+  height: fit-content;
+}
+
+@media screen and (max-width:375){
+  .output{
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+}
+@media screen and (max-width:656){
+  .output{
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+}
+

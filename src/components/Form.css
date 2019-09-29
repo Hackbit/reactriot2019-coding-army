@@ -95,11 +95,17 @@ height: 100%;
     .logo{
         display: block;
     }
+    h1{
+        font-size: 1em;
+    }
     
 }
 @media screen and (max-width:656){
     .logo{
         display: block;
+    }
+    h1{
+        font-size: 1em;
     }
  
 }

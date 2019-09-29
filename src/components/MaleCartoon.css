@@ -1,4 +1,6 @@
-
+:root{
+  --shirt: #141518;
+}
 .boy {
   position: relative;
   width: 194px;
@@ -230,7 +232,7 @@
   top: 0;
   width: 91px;
   height: 103px;
-  background-color: red;
+  background-color: var(--shirt);
   margin: 0 auto;
   border-top-left-radius: 30%;
   border-top-right-radius: 30%;
@@ -247,14 +249,14 @@
   transform: translatex(-50%);
   border-radius: 50%;
   border: 3px solid #000;
-  box-shadow: 0 2px 0px 2px red, 0 2px 0 4px #000;
+  box-shadow: 0 2px 0px 2px var(--shirt), 0 2px 0 4px #000;
 }
 .boy .hand {
   position: absolute;
   top: 215px;
   height: 50px;
   width: 28px;
-  background-color: red;
+  background-color: var(--shirt);
 }
 .boy .hand.left {
   left: 41px;

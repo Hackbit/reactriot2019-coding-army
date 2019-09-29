@@ -20,3 +20,18 @@
 	margin-top: -10px;
 	margin-right: -20px;
 }
+
+@media screen and (max-width:375){
+  h1{
+		font-size: 1em;
+	}
+  
+}
+@media screen and (max-width:656){
+  h1{
+		font-size: 1em;
+	}
+
+}
+
+
