@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Output from './Output';
 import ReactDOM from 'react-dom';
 import './Form.css';
-
+var userName = "";
 class PlacesOptions extends React.Component {
     constructor(props) {
         super(props);
@@ -122,9 +122,9 @@ class Form extends Component {
             name: e.target.value,
         });
         console.log(this.state.name);
+        userName = this.state.name;
 
     }
-
     updateColor = (e) => {
         this.setState({
             color: this.target.value,
@@ -132,8 +132,6 @@ class Form extends Component {
         console.log(this.state.color);
 
     }
-
-
     render() {
         const { shown } = this.state;
         return (
@@ -161,7 +159,7 @@ class Form extends Component {
                             </div>
                         </form >
                     ) : (
-                            <Output userName={this.state.name} />
+                            <Output userName={userName} />
                         )
                 }
             </div>

@@ -7,7 +7,7 @@ import './Output.css';
 export default function Output(props) {
   return (
     <div className="output">
-      <Bubble name={this.props.name} />
+      <Bubble name={props.name} />
       <MaleCartoon />
       <FemaleCartoon />
     </div>
