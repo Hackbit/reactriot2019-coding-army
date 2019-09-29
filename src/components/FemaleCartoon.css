@@ -1,86 +1,20 @@
-
-ul{
-  margin: 0;
-  padding: 0;
-  display: flex;
-  list-style-type: none;
+:root{
+  --shirt: #141518;
 }
 
-ul li{
-  margin: 5px;
-  padding: 0;
-  height: 40px;
-  width: 40px;
-  border-radius: 4px;
-  cursor: pointer;
-}
-li#green{
-  background-color: green;
-}
-li#red{
-  background-color: red;
-}
-li#purple{
-  background-color: purple;
-}
-li#brown{
-  background-color: brown;
-}
-li#blue{
-  background-color: blue;
-}
-li#violet{
-  background-color: violet;
-}
 .girl {
   position: relative;
   width: 194px;
-  margin: 0 auto;
+  margin: 0;
 }
 .girl .head {
   height: 210px;
   position: relative;
 }
-.girl .head .hair {
-  position: relative;
-  top: 7px;
-  height: 159px;
-  width: 95%;
-  background-color: #7b4330;
-  border-radius: 50%;
-  border: 5px solid #000;
-}
-.girl .head .hair::after {
-  content: "";
-  display: block;
-  width: 24px;
-  height: 19px;
-  background-color: #ffdbc8;
-  position: absolute;
-  top: 81px;
-  left: 13px;
-  z-index: 0;
-  transform: rotate(-41deg);
-  border-top: 4px solid #000;
-  border-right: 4px solid #000;
-}
-.girl .head .hair::before {
-  content: "";
-  display: block;
-  width: 24px;
-  height: 19px;
-  background-color: #ffdbc8;
-  position: absolute;
-  top: 81px;
-  right: 13px;
-  z-index: 0;
-  transform: rotate(41deg);
-  border-top: 4px solid #000;
-  border-left: 4px solid #000;
-}
+
 .girl .head .hair .triangle {
   width: 0;
-  height: 0;
+  height: 12px;
   border-left: 22px solid transparent;
   border-right: 22px solid transparent;
   border-bottom: 21px solid #000;
@@ -96,11 +30,11 @@ li#violet{
   border-right: 19px solid transparent;
   border-bottom: 17px solid #ffdbc8;
   position: absolute;
-  top: 5px;
-  left: -16px;
+  top: 16px;
+  left: -17px;
 }
 .girl .head .hair .triangle.left {
-  left: 37px;
+  left: 38px;
 }
 .girl .head .hair .triangle.center {
   left: 77px;
@@ -112,16 +46,16 @@ li#violet{
   border-right: 15px solid transparent;
 }
 .girl .head .hair .triangle.right {
-  left: 107px;
+  left: 110px;
 }
 .girl .head .face {
   position: absolute;
   left: 50%;
-  top: 105px;
+  top: 104px;
   z-index: 1;
   transform: translatex(-50%);
-  height: 105px;
-  width: 158px;
+  height: 101px;
+  width: 135px;
   background-color: #ffdbc8;
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
@@ -133,7 +67,7 @@ li#violet{
 .girl .head .face .content {
   position: relative;
   z-index: 7;
-  margin-top: 17px;
+  margin-top: 13px;
   height: 5px;
   background-color: black;
   border: 3px solid #b8571d;
@@ -162,10 +96,10 @@ li#violet{
   left: -5px;
 }
 .girl .head .face .content .eye.left {
-  left: 19px;
+  left: 11px;
 }
 .girl .head .face .content .eye.right {
-  right: 19px;
+  right: 11px;
 }
 .girl .head .face .content .eye.right::before {
   transform: rotateX(28deg) rotateY(202deg);
@@ -195,12 +129,12 @@ li#violet{
   left: 15px;
 }
 .girl .head .face .content .dot.left {
-  top: 35px;
-  left: 27px;
+  top: 29px;
+  left: 21px;
 }
 .girl .head .face .content .dot.right {
-  top: 35px;
-  left: 111px;
+  top: 33px;
+  left: 99px;
 }
 .girl .head .face .content .nose {
   position: absolute;
@@ -242,7 +176,7 @@ li#violet{
   left: -21px;
 }
 .girl .head .face .content .ear.right {
-  left: 156px;
+  left: 133px;
   transform: rotate(180deg);
 }
 .girl .head .face .content .mouse {
@@ -261,9 +195,10 @@ li#violet{
 .girl .torso {
   position: relative;
   top: 0;
+  z-index: 0;
   width: 91px;
   height: 103px;
-  background-color: red;
+  background-color: var(--shirt);
   margin: 0 auto;
   border-top-left-radius: 30%;
   border-top-right-radius: 30%;
@@ -280,14 +215,21 @@ li#violet{
   transform: translatex(-50%);
   border-radius: 50%;
   border: 3px solid #000;
-  box-shadow: 0 2px 0px 2px red, 0 2px 0 4px #000;
+  box-shadow: 0 2px 0px 2px var(--shirt), 0 2px 0 4px #000;
+}
+.frok{
+  border-bottom: 100px solid var(--shirt);
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    height: 0;
+    width: 100px;
 }
 .girl .hand {
   position: absolute;
   top: 215px;
   height: 50px;
   width: 28px;
-  background-color: red;
+  background-color: var(--shirt);
 }
 .girl .hand.left {
   left: 41px;
@@ -332,12 +274,6 @@ li#violet{
   position: absolute;
   top: 93px;
 }
-.girl .hip {
-  width: 80px;
-  height: 20px;
-  margin: 0 auto;
-  background-color: #37649b;
-}
 .girl .legs {
   width: 80px;
   height: 86px;
@@ -354,8 +290,8 @@ li#violet{
 .girl .legs .leg::after {
   content: "";
   position: absolute;
-  z-index: 0;
   left: 1px;
+  z-index: 0;
   bottom: -20px;
   width: 100%;
   height: 30px;
@@ -364,4 +300,28 @@ li#violet{
 }
 .girl .legs .leg.right {
   float: right;
+}
+
+.badge-ribbon {
+  position: relative;
+  background: firebrick;
+  height: 208px;
+  width: 196px;
+  border-radius: 50%;
+}
+.badge-ribbon:before,
+.badge-ribbon:after {
+  content: '';
+  position: absolute;
+  border-bottom: 70px solid firebrick;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  top: 179px;
+  left: -10px;
+  transform: rotate(-140deg);
+}
+.badge-ribbon:after {
+  left: auto;
+  right: -15px;
+  transform: rotate(140deg);
 }

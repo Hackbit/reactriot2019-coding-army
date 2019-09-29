@@ -11,6 +11,7 @@ export default function FemaleCartoon() {
             <div className="triangle center"></div>
             <div className="triangle right"></div>
           </div>
+          <div className="badge-ribbon"></div>
           <div className="face">
             <div className="content">
               <div className="left eye"></div>
@@ -25,9 +26,9 @@ export default function FemaleCartoon() {
           </div>
         </div>
         <div className="torso"></div>
+        <div className="frok"></div>
         <div className="hand left"></div>
         <div className="hand right"></div>
-        <div className="hip"></div>
         <div className="legs">
           <div className="leg left"></div>
           <div className="leg right"></div>

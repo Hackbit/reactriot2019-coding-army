@@ -1,41 +1,8 @@
 
-ul{
-  margin: 0;
-  padding: 0;
-  display: flex;
-  list-style-type: none;
-}
-
-ul li{
-  margin: 5px;
-  padding: 0;
-  height: 40px;
-  width: 40px;
-  border-radius: 4px;
-  cursor: pointer;
-}
-li#green{
-  background-color: green;
-}
-li#red{
-  background-color: red;
-}
-li#purple{
-  background-color: purple;
-}
-li#brown{
-  background-color: brown;
-}
-li#blue{
-  background-color: blue;
-}
-li#violet{
-  background-color: violet;
-}
 .boy {
   position: relative;
   width: 194px;
-  margin: 0 auto;
+  margin: 0;
 }
 .boy .head {
   height: 210px;

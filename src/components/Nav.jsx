@@ -1,11 +1,18 @@
 import React, { Component } from 'react';
 
 export default class Nav extends Component {
+
     render() {
         return (
             <>
             <header>
                 <nav className="homepg-nav">
+
+
+  render() {
+    return (
+      <header>
+        <nav className="homepg-nav">
 
                     <ul className="list-container">
                         <a className="link" href="google.com"><i class="fas fa-home"></i> Home</a>
