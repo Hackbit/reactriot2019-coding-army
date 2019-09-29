@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './Nav.css'
-import Form from '../component/Form';
+import Form from './Form';
 
 export default class LetsPlay extends Component {
   state = {
@@ -15,6 +15,7 @@ export default class LetsPlay extends Component {
 
     return (
       <div>
+
         {
           shown ? (
             <div className="LetsPlay">
