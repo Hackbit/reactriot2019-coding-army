@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Output from './Output';
+import logo from '../images/logo.png';
 import ReactDOM from 'react-dom';
 import './Form.css';
 
@@ -97,7 +98,7 @@ class NameForm extends React.Component {
         return (
             <label>
                 Name:
-            <input type="text" value={this.state.value} onChange={this.handleSubmit} placeholder="Your good name here.." />
+            <input type="text" value={this.state.value + " "} onChange={this.handleSubmit} placeholder="Your good name here.." />
             </label>
         );
     }
@@ -122,14 +123,6 @@ class Form extends Component {
     toggleShown = (e) => {
         this.setState({ shown: !this.state.shown });
     }
-    // updateName = (e) => {
-    //     this.setState({
-    //         name: e.target.value,
-    //     });
-    //     console.log(this.state.name);
-    //     userName = this.state.name;
-
-    // }
     updateColor = (e) => {
         this.setState({
             color: e.target.value,
@@ -144,7 +137,10 @@ class Form extends Component {
                 {
                     shown ? (
                         < form >
-                            <h1>CARTOONIFY GAME FORM</h1>
+                            <div>
+                                <img className="logo" src={logo} alt="logo" width="100px" height="80px" />;
+                                <h1>CARTOONIFY GAME FORM</h1>
+                            </div>
                             <div className="main">
                                 <div>
                                     <NameForm />,
