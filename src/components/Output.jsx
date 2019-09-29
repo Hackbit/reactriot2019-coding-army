@@ -5,23 +5,17 @@ import MaleCartoon from './MaleCartoon';
 import FemaleCartoon from './FemaleCartoon';
 import Bubble from './Bubble';
 import './Output.css';
-import Desert from '../images/desert.jpg';
+
 
 export default function Output(props) {
-  var bg = '';
-  // {
-  //   props.place === 'Desert' ? { bg } = '../images/desert.jpg' : { bg } = '';
-  // }
-  console.log(bg);
-  const backgrounStyle = {
-    backgroundImage: "url(" + { Desert } + ")"
-  }
   return (
-    <div className="output" style={{ backgrounStyle }}>
+    <div className="output">
       <Bubble name={props.userName} place={props.place} />
+      <a href="https://www.reactriot.com/entries/74-coding-army/vote" target="_blank" rel="noopener noreferrer">
+        <button className="hackbit-vote-widget">Vote for Us!!</button>
+      </a>
       {props.gender === "Male" ? <MaleCartoon /> : <FemaleCartoon />}
-
-
-    </div>
+    </div >
   )
 }
+

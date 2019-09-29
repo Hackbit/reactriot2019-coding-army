@@ -31,7 +31,7 @@ class PlacesOptions extends React.Component {
             <div >
                 <label className="place">
                     Which is your favorite Place
-                      <select value={this.state.value} onChange={this.handleSubmit}>
+                      <select value={this.state.value} onChange={this.handleSubmit} required>
                         <option value="Mountain">Mountain</option>
                         <option value="Beach">Beach</option>
                         <option value="Desert">Desert</option>
@@ -96,7 +96,7 @@ class NameForm extends React.Component {
         return (
             <label>
                 Name:
-            <input type="text" value={this.state.value} onChange={this.handleSubmit} placeholder="Your good name here.." />
+            <input required type="text" value={this.state.value} onChange={this.handleSubmit} placeholder="Your good name here.." />
             </label>
         );
     }
@@ -131,7 +131,7 @@ class Form extends Component {
             <div>
                 {
                     shown ? (
-                        < form >
+                        < form onSubmit={(e) => this.toggleShown(e)} >
                             <div>
                                 <img className="logo" src={logo} alt="logo" width="100px" height="80px" />;
                                 <h1>CARTOONIFY GAME FORM</h1>
@@ -149,10 +149,11 @@ class Form extends Component {
                                     <input type="color"
                                         value={this.state.value}
                                         onChange={this.updateColor}
+                                        required
                                     ></input>
                                 </div>
                                 <PlacesOptions />
-                                <input className="submit" type="submit" onClick={(e) => this.toggleShown(e)}></input>
+                                <input className="submit" type="submit"></input>
                             </div>
                         </form >
                     ) : (
