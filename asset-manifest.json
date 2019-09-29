@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/TD-React-Challenge-Test-1/static/css/main.e92d6542.chunk.css",
-    "main.js": "/TD-React-Challenge-Test-1/static/js/main.22650846.chunk.js",
-    "main.js.map": "/TD-React-Challenge-Test-1/static/js/main.22650846.chunk.js.map",
-    "runtime-main.js": "/TD-React-Challenge-Test-1/static/js/runtime-main.077a338e.js",
-    "runtime-main.js.map": "/TD-React-Challenge-Test-1/static/js/runtime-main.077a338e.js.map",
-    "static/js/2.716ecf86.chunk.js": "/TD-React-Challenge-Test-1/static/js/2.716ecf86.chunk.js",
-    "static/js/2.716ecf86.chunk.js.map": "/TD-React-Challenge-Test-1/static/js/2.716ecf86.chunk.js.map",
-    "index.html": "/TD-React-Challenge-Test-1/index.html",
-    "precache-manifest.40d743d3b75e1e88d3dfdbd497958886.js": "/TD-React-Challenge-Test-1/precache-manifest.40d743d3b75e1e88d3dfdbd497958886.js",
-    "service-worker.js": "/TD-React-Challenge-Test-1/service-worker.js",
-    "static/css/main.e92d6542.chunk.css.map": "/TD-React-Challenge-Test-1/static/css/main.e92d6542.chunk.css.map",
-    "static/media/Output.css": "/TD-React-Challenge-Test-1/static/media/beach.285247f8.jpg",
-    "static/media/App.css": "/TD-React-Challenge-Test-1/static/media/capture1.7c7dcdfd.PNG",
-    "static/media/logo.png": "/TD-React-Challenge-Test-1/static/media/logo.9ad61bba.png"
+    "main.css": "/reactriot2019-coding-army/static/css/main.a1545ecb.chunk.css",
+    "main.js": "/reactriot2019-coding-army/static/js/main.28a71943.chunk.js",
+    "main.js.map": "/reactriot2019-coding-army/static/js/main.28a71943.chunk.js.map",
+    "runtime-main.js": "/reactriot2019-coding-army/static/js/runtime-main.e3ef6feb.js",
+    "runtime-main.js.map": "/reactriot2019-coding-army/static/js/runtime-main.e3ef6feb.js.map",
+    "static/js/2.716ecf86.chunk.js": "/reactriot2019-coding-army/static/js/2.716ecf86.chunk.js",
+    "static/js/2.716ecf86.chunk.js.map": "/reactriot2019-coding-army/static/js/2.716ecf86.chunk.js.map",
+    "index.html": "/reactriot2019-coding-army/index.html",
+    "precache-manifest.4ad0678aa41677574ee2e73bc483cc26.js": "/reactriot2019-coding-army/precache-manifest.4ad0678aa41677574ee2e73bc483cc26.js",
+    "service-worker.js": "/reactriot2019-coding-army/service-worker.js",
+    "static/css/main.a1545ecb.chunk.css.map": "/reactriot2019-coding-army/static/css/main.a1545ecb.chunk.css.map",
+    "static/media/Output.css": "/reactriot2019-coding-army/static/media/beach.285247f8.jpg",
+    "static/media/App.css": "/reactriot2019-coding-army/static/media/capture1.7c7dcdfd.PNG",
+    "static/media/logo.png": "/reactriot2019-coding-army/static/media/logo.9ad61bba.png"
   }
 }
