@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 import Output from './Output';
+import logo from '../images/logo.png';
 import ReactDOM from 'react-dom';
 import './Form.css';
+
+
+
 var userName = "";
 class PlacesOptions extends React.Component {
     constructor(props) {
@@ -15,7 +19,6 @@ class PlacesOptions extends React.Component {
             value: event.target.value
         })
         console.log(this.state.value);
-        event.preventDefault();
     }
 
     render() {
@@ -84,17 +87,18 @@ class NameForm extends React.Component {
     }
 
     handleSubmit(event) {
-        this.setState({ value: event.target.value });
-
-        console.log(this.state.value);
         event.preventDefault();
+
+        this.setState({ value: event.target.value });
+        console.log(this.state.value);
+        userName = this.state.value;
     }
 
     render() {
         return (
             <label>
                 Name:
-            <input type="text" value={this.state.value} onChange={this.handleSubmit} placeholder="Your good name here.." />
+            <input type="text" value={this.state.value + " "} onChange={this.handleSubmit} placeholder="Your good name here.." />
             </label>
         );
     }
@@ -119,14 +123,6 @@ class Form extends Component {
     toggleShown = (e) => {
         this.setState({ shown: !this.state.shown });
     }
-    updateName = (e) => {
-        this.setState({
-            name: e.target.value,
-        });
-        console.log(this.state.name);
-        userName = this.state.name;
-
-    }
     updateColor = (e) => {
         this.setState({
             color: e.target.value,
@@ -141,7 +137,10 @@ class Form extends Component {
                 {
                     shown ? (
                         < form >
-                            <h1>CARTOONIFY GAME FORM</h1>
+                            <div>
+                                <img className="logo" src={logo} alt="logo" width="100px" height="80px" />;
+                                <h1>CARTOONIFY GAME FORM</h1>
+                            </div>
                             <div className="main">
                                 <div>
                                     <NameForm />,
@@ -161,7 +160,7 @@ class Form extends Component {
                             </div>
                         </form >
                     ) : (
-                            <Output userName={userName} />
+                            <Output userName={userName} style={{}} />
                         )
                 }
             </div>

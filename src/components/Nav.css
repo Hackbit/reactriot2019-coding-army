@@ -8,11 +8,10 @@ header{
     text-decoration: none;
     color: white;
     font-family: sans-serif;
-    font-size: 20px;
+    font-size: 1.4em;
     padding: 15px;
     text-align: center;
     float: left;
-    margin: 15px;
 }
 
 .link:hover{
@@ -20,6 +19,13 @@ header{
 }
 .list-container{
     list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
 i{
     font-weight: 900;
@@ -33,7 +39,7 @@ i:hover{
     justify-content: space-between;
     width: 100%;
     overflow: auto;
-    background-image: linear-gradient(to right,yellow, #ec963c , yellow);
+    background-image: linear-gradient(to right,rgba(255, 255, 0, 0.651), #ec973c8e , rgba(255, 255, 0, 0.651));
 }
 .LetsPlay{
     display: block;
@@ -77,33 +83,30 @@ i:hover{
     cursor: pointer;
 
 }
-.logo{
+header .logo{
     margin: 20px;
     width:100px;
     height: 80px;
     background-color: white;
     border-radius: 50%;
+    display: block;
 }
 @media screen and (max-width:768px){
     .link{
-        margin:5px;
-        font-size: 15px;
+        font-size: 1.2em;
     }
-    .logo{
-        margin:15px;
+    header img{
+        display: none;
     }
     
 }
 @media screen and (max-width:375px){
     
     .link{
-        display: flex;
-        flex-direction: column;
-        margin:3px;
-        font-size: 12px;
+        font-size: 1.2em;
     }
-    .logo{
-        margin:15px;
+    header img{
+        display: none;
     }
     .main-heading{
         font-size:30px;

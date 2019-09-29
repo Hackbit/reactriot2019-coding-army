@@ -5,7 +5,9 @@ body {
     font-family: 'Chilanka', cursive;
     font-size: 1em;
 }
-
+header .logo{
+    display: none;
+}
 label {
     font-weight: bold;
     font-size: 1.5em;
@@ -90,9 +92,17 @@ height: 100%;
     .submit {
         padding: 15px;
     }
+    .logo{
+        display: block;
+    }
     
 }
-
+@media screen and (max-width:656){
+    .logo{
+        display: block;
+    }
+ 
+}
 
 
     
