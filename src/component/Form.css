@@ -52,7 +52,7 @@ input, label, select {
 
 }
 .submit:hover{
-    color: darkcyan;
+    color: white;
     font-weight: 700;
     letter-spacing: 4px;
     background: none;
@@ -68,11 +68,6 @@ margin-top: 0px;
 height: 100%;
 }
 
-.submit:hover{
-    cursor: pointer;
-    color:#3f51b5;
-    background-color: black;
 
-}
 
 
