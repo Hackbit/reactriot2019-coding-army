@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Nav.css';
-import logo from '../images/logo.png';
 
 
 
@@ -17,9 +16,6 @@ export default class Nav extends Component {
                             <a class="link" href="https://www.reactriot.com/entries/74-coding-army/vote"><i class="fas fa-check-circle"></i> Vote for us</a>
                             <a class="link" href="https://www.reactriot.com/entries/74-coding-army/vote"><i class="fas fa-thumbs-up"></i> Like our repo</a>
                             <a class="link" href="https://github.com/reenaishtiaq"><i class="fas fa-users"></i> Follow us</a></ul>
-                        <div className="logo">
-                            <img src={logo} alt="logo" width="100px" height="80px" />;
-                        </div>
                     </nav>
 
                 </header>

@@ -45,12 +45,12 @@ i:hover{
     display: block;
 }
 .main-heading{
-    color: #ffd437;
+    color: #eb953b;
     font-size: -webkit-xxx-large;
     margin-top: 50px;
     text-decoration: underline;
     font-family: 'Chilanka',cursive;
-    text-shadow: 2px 2px #0e0c0c;
+    text-shadow: 2px 2px 7px #0e0c0c
 
 }
 .sub-heading{
@@ -73,7 +73,7 @@ i:hover{
     font-family: 'Chilanka',cursive;
 }
 .play-game:hover{
-    color:  #fdbe0f;
+    color:  brown;
     font-weight: 700;
     letter-spacing: 6px;
     background: none;
