@@ -14,7 +14,6 @@ header{
     float: left;
     margin: 15px;
 }
-
 .link:hover{
   color: red;
 }
@@ -44,10 +43,12 @@ i:hover{
     margin-top: 50px;
     font-family: 'Anton', sans-serif;
     text-decoration: underline;
+    font-family: 'Chilanka',cursive;
     text-shadow: 2px 2px #0e0c0c;
+
 }
 .sub-heading{
-    color: black;
+    color: #2b7923;
     font-size: larger;
 }
 .play-game{
@@ -56,18 +57,25 @@ i:hover{
     border-radius: 6px;
     display: inline-block;
     transition: all 0.4s ease;
-    color: #d01708;
+    color: #2b7923;
     font-size: xx-large;
-    background-color: #0d2b28;
+    background-image: linear-gradient(to left, red , yellow);
     outline: none;
     margin: 20px;
+
+    font-weight: bold;
+    font-family: 'Chilanka',cursive;
 }
 .play-game:hover{
-    color: white;
+    color:  #fdbe0f;
     font-weight: 700;
-    letter-spacing: 4px;
+    letter-spacing: 6px;
     background: none;
     transition: all 0.4s ease; 
+    box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    cursor: pointer;
+
 }
 .logo{
     margin: 20px;
