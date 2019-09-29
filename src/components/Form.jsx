@@ -9,7 +9,7 @@ import './Form.css';
 var userName = "";
 var place = "";
 var gender = "";
-
+var color = "";
 
 class PlacesOptions extends React.Component {
     constructor(props) {
@@ -36,7 +36,6 @@ class PlacesOptions extends React.Component {
                         <option value="Beach">Beach</option>
                         <option value="Desert">Desert</option>
                         <option value="Valley">Valley</option>
-                        <option value="Forest">Forest</option>
                     </select>
                 </label>
             </div>
@@ -118,12 +117,13 @@ class Form extends Component {
     toggleShown = (e) => {
         this.setState({ shown: !this.state.shown });
     }
+
     updateColor = (e) => {
+        console.log(e.target.value);
         this.setState({
             color: e.target.value,
         });
-        console.log(this.state.color);
-
+        color = e.target.value;
     }
     render() {
         const { shown } = this.state;
@@ -156,7 +156,7 @@ class Form extends Component {
                             </div>
                         </form >
                     ) : (
-                            <Output userName={userName} place={place} gender={gender} style={{}} />
+                            <Output userName={userName} place={place} gender={gender} color={color} style={{}} />
                         )
                 }
             </div>
