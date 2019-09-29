@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/reactriot2019-coding-army/precache-manifest.0e121f48b96f938e3bb672c51c6619be.js"
+  "/reactriot2019-coding-army/precache-manifest.3e520f113b637e5f8dcacea2d5f57e39.js"
 );
 
 self.addEventListener('message', (event) => {
