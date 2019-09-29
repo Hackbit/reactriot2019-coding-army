@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import Output from './Output';
 
 import './Form.css';
@@ -55,7 +56,4 @@ class Form extends Component {
     };
 }
 
-
-
 export default Form;
-
