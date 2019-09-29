@@ -1,6 +1,8 @@
 header{ 
     display: flex;
     background-color: rgb(249, 188, 7);
+    box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+
 }
 .link{
     text-decoration: none;
@@ -10,34 +12,43 @@ header{
     padding: 15px;
     text-align: center;
     float: left;
-    margin: 10px;
+    margin: 15px;
 }
 .link:hover{
-  color: rgb(255, 251, 0);
+  color: red;
 }
 .list-container{
-
     list-style-type: none;
-    padding: 20px;
+}
+i{
+    font-weight: 900;
+    color: #ff4c01;
+}
+i:hover{
+    color: white;
 }
 .homepg-nav{
+   display: flex;
+    justify-content: space-between;
     width: 100%;
     overflow: auto;
+    background-image: linear-gradient(to right,yellow, #ec963c , yellow);
 }
-
 .LetsPlay{
     display: block;
 }
-
 .main-heading{
-    color: #b50f02;
+    color: #ffd437;
     font-size: -webkit-xxx-large;
     margin-top: 50px;
     font-family: 'Anton', sans-serif;
     text-decoration: underline;
+    font-family: 'Chilanka',cursive;
+    text-shadow: 2px 2px #0e0c0c;
+
 }
 .sub-heading{
-    color: black;
+    color: #2b7923;
     font-size: larger;
 }
 .play-game{
@@ -46,21 +57,32 @@ header{
     border-radius: 6px;
     display: inline-block;
     transition: all 0.4s ease;
-    color: #d01708;
+    color: #2b7923;
     font-size: xx-large;
-    background-color: #0d2b28;
+    background-image: linear-gradient(to left, red , yellow);
     outline: none;
     margin: 20px;
 
+    font-weight: bold;
+    font-family: 'Chilanka',cursive;
 }
 .play-game:hover{
-    color: darkcyan;
+    color:  #fdbe0f;
     font-weight: 700;
-    letter-spacing: 4px;
+    letter-spacing: 6px;
     background: none;
     transition: all 0.4s ease; 
-    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    cursor: pointer;
+
+}
+.logo{
+    margin: 20px;
+    width:100px;
+    height: 80px;
+    background-color: white;
+    border-radius: 50%;
 }
 
 
